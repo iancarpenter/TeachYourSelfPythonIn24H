@@ -3,6 +3,7 @@ print("Welcome to the receipt program!")
 runningTotal = 0.00
 
 while True:
+    
     value = input("Enter the value for the seat ['q' to quit]: ")         
 
     if value == 'q':
