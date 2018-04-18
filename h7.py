@@ -7,9 +7,13 @@ while True:
 
     if value == 'q':
         break
-    elif value.is():
-        print("I'm sorry but {} isn't valid please try again.".format(value))
-    else:
-        runningTotal = runningTotal + float(value)
+    
+    try:
+      x = float(value)
+    except ValueError:
+      print("I'm sorry but {} isn't valid please try again.".format(value))
+      continue
+
+    runningTotal = runningTotal + float(value)
 
 print("Total: $ {}".format(str(runningTotal)))
